@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: SecretMessage
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-sources[0]:
+            endpoint: https://azurekvtest.vault.azure.net/
+
+secret:
+  message: ${secretmessage}
