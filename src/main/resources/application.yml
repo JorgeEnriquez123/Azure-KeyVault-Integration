@@ -8,5 +8,7 @@ spring:
           property-sources[0]:
             endpoint: https://azurekvtest.vault.azure.net/
 
-secret:
+main:
   message: ${secretmessage}
+#other:
+#  message: ${othermessage}
